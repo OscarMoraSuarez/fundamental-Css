@@ -1,0 +1,141 @@
+/* 
+-Selector: El elemnto al que vamos aplicar estilos
+    selectores simples
+        selectores elemntales
+            Selector universal -> *
+            selector de tippo o etiqueta -> nombre de la etiqueta
+        selectores de atributo 
+         selector de id ->ide del elemnto
+         slector de clase-> clase del elemento
+         otros atributos
+         [atributo]
+         [atributo=valor]
+         [atributo^=valor]
+         [atributo*=valor]
+         [atributo $=valor]
+         [atributo |=valor]
+    selectores compuestos
+        selectores agrupados
+        selectores combinadores
+            selector decendente -> sleccionamos un elemnto dentro de otro
+            selector de hermano ->siguiente-> nos permite seleccionar el elemento siguiente no ayuda con
+            el signo + a seleccionar otro elemento inmdiatamente despues, solo sirve para seleccionar un elemento
+            selector hermano multiple->nos permite seleccionar varios elementos hermanos depues de un marcador inicial
+
+            
+        pseudoclases-pseudolementos    
+*/
+
+
+/* * {
+    margin: 0px;
+    padding: 0px;
+    background-color: lightcoral;
+}
+
+body {
+    // slector universal 
+    // background-color: steelblue; 
+    background-color: slateblue;
+}
+
+h1 {
+    // selector de etiqueta 
+
+background-color: springgreen;
+font-size: 20px;
+font-weight: bolder;
+
+}
+p {
+    background-color: lightgreen;
+}
+ul {
+    background-color: red;
+    list-style-type: armenian;
+    list-style-position: inside;
+}
+li {
+    background-color: blue;
+    margin-left: 25px;
+}*/
+
+
+/* #title {
+    color: lightseagreen;
+    background: lightgreen;
+    text-align: center;
+} */
+
+.title {
+    color: lightseagreen;
+    background: lightgreen;
+    text-align: center;
+}
+
+.text {
+    font-size: 2em;
+    font-family: cursive;
+    background-color: lawngreen;
+}
+
+[href] {
+    background-color: mediumorchid;
+    /* todos los elementos que tengan el atributo href se colorearan */
+    font-size: 2em;
+    text-decoration: none;
+}
+
+[href='www.youtube.com'] {
+    /* el enlace que tenga este valor se coloreara de rojo */
+    background-color: red;
+    color: white;
+}
+
+[href^=facebook] {
+    /*caputuro o selecciono los atributos href que comienzan con facebook  */
+    background-color: steelblue;
+}
+
+[href*=ejemplo] {
+    /* captura cualquier palabra que contenga el atributo busca entre todas */
+    color: aquamarine;
+    background-color: lightseagreen;
+}
+
+[href $=azul] {
+    background-color: black;
+    color: aliceblue;
+}
+
+[lang|="english"] {
+    /* capturo el atributo lang */
+    background-color: magenta;
+}
+
+.text-1,
+.text-2,
+.text-3 {
+    background-color: aquamarine;
+    font-size: x-large;
+    font-family: cursive;
+}
+
+.title-2 {
+    color: crimson;
+}
+
+div h2 {
+    color: lavender;
+    background-color: chartreuse;
+}
+
+.text+.header-3 {
+    background-color: chocolate;
+}
+
+.referencia~.parrafo {
+    font-size: x-large;
+    color: azure;
+    background-color: seagreen;
+}
